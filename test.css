@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 6vh;
+    background-color: red;
+    padding: 0.5vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-radius: 0 0 0.5vw 0.5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 3;
+    animation: dropNavDown 1s ease-out forwards;
+}
+
+@keyframes dropNavDown{
+    0%{
+        top: -6vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.navImg{
+    width: 5vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(360deg);
+    animation: spinQuincyCross 2s linear;
+    animation-iteration-count: infinite;
+}
+
+.navImg img{
+    width: 5vh;
+    border-radius: 50%;
+}
+
+@keyframes spinQuincyCross{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.navLink p{
+    color: black;
+    text-shadow: 0 0 5px #000;
+    font-family: "New Rocker", system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+
+.title{
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    top: 7vh;
+    font-size: 1.9rem;
+    overflow: hidden;
+}
+
+.title h1{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-family: "New Rocker", system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+.backImg{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -2vh;
+    z-index: -5;
+}
+
+.black{
+    width: 100%;
+    height: 30vh;
+    z-index: 1;
+    background: linear-gradient(transparent, black 45%, black 5%);
+    position: relative;
+    top: -20vh
+}
+
+.heading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.imgs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14vw;
+}
+
+.yuwach{
+    width: 13.5vw;
+    height: 13.5vw;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.yu{
+    width: 100%;
+    height: 100%;
+}
+
+.sec-3{
+    margin-top: 10vh;
+}
+
+.quinImgs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5.6vw;
+
+}
+
+.quincy{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.quin{
+    width: 100%vw;
+    height: 100%vw;
+}
+
+.sec-4{
+    margin-top: 10vh;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vw 0;
+    gap: 5vw;
+    padding: 0 2vw;
+}
+
+.gal{
+    width: 15vw;
+    height: 15vw;;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 2vw;
+}
+
+.galLetters{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.sec-5{
+    margin-top: 5vh;
+}
+
+.ending{
+    display: flex;
+    justify-content: center;
+}
+
+.endingLetter{
+    width: 16vw;
+    height: 16vw;
+    overflow: hidden;
+}
+
+.endingLetter:first-child{
+    border-radius: 6vw 0 0 6vw;
+}
+
+.endingLetter:last-child{
+    border-radius: 0 6vw 6vw 0;
+}
+
+.endingImg{
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    margin-top: 10vh;
+}
+
+.foot{
+    margin-top: 10vh;
+    text-align: center;
+}
+
